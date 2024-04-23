@@ -2,6 +2,9 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  background-color: #26408b;
   color: white;
+}
+
+body{
+  background-color: #26408b;
 }
