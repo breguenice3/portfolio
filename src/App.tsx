@@ -1,5 +1,6 @@
 import './App.css';
 import Bio from './components/bio/bio';
+import Cards from './components/cards/cards';
 import Header from './components/header/header';
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <div>
       <Header />
       <Bio />
+      <Cards />
     </div>
   );
 }
