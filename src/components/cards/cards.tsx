@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import Card from "../card-project/card";
 import { useState, useEffect } from "react";
-import { Octokit } from "octokit";
 import { motion } from "framer-motion";
 
 const CardsLoad = styled.div`
@@ -36,10 +35,7 @@ export default function Cards() {
 
     const [repositorios, setRepositorios] = useState<any[]>([])
 
-    const octokit = new Octokit({
-        auth: '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'
-    });
-
+   
     useEffect(() => {
         const fetchData = async () => {
             const response = await fetch(`https://api.github.com/users/breguenice3/repos`);
