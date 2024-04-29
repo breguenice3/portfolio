@@ -19,10 +19,13 @@ overflow-y: hidden;
     width: 400px;
     border-radius: 50%;
     box-shadow: 20px 20px 20px 10px #0d022189;
+    box-shadow: 20px 20px 20px 10px #0d022189;
 }
 
 & img:hover{
     transform: scale(1.1);
+    transition: ease 0.4s;
+    cursor: pointer;
     transition: ease 0.4s;
     cursor: pointer;
 }
@@ -38,9 +41,11 @@ font-family: "Roboto", sans-serif;
 & p{
     font-size: 20px;
     padding: 0px 0px 20px 0px;
+    padding: 0px 0px 20px 0px;
 }
 
 & h3{
+    padding: 10px 0px 10px 0px;
     padding: 10px 0px 10px 0px;
     font-size: 24px;
 }
@@ -68,16 +73,39 @@ const Icons = styled.div`
     gap: 10px;
     align-items: center;
     height: auto;
+
+& h2{
+    font-size: 16px;
+    padding: 5px 0px 20px 0px;
+}
+
+& a{
+    text-decoration: none;
+}
+
+& a:hover{
+    color: #0000003e;
+}
+`
+
+const Icons = styled.div`
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    height: auto;
 `
 
 export default function Bio() {
 
     const [bio, setBio] = useState<any>([])
+    const [bio, setBio] = useState<any>([])
 
     useEffect(() => {
         const fetchData = async () => {
             const response = await fetch(`https://api.github.com/users/breguenice3`);
+            const response = await fetch(`https://api.github.com/users/breguenice3`);
             const data = await response.json();
+            setBio(data);
             setBio(data);
         }
         fetchData();
