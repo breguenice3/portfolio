@@ -4,6 +4,7 @@ import { RiHtml5Line } from "react-icons/ri";
 import { FaCss3Alt } from "react-icons/fa";
 import { TbBrandTypescript } from "react-icons/tb";
 import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 
 const Div = styled.div`
 display: flex;
@@ -12,6 +13,7 @@ width: 100%;
 justify-content: space-evenly;
 height: 100vh;
 padding: 200px 0px;
+overflow-y: hidden;
 
 & img{
     width: 400px;
@@ -84,23 +86,25 @@ export default function Bio() {
     return (
         <div>
             <Div>
-                <div>
+                <motion.div initial={{ x: 1000 }} animate={{ x: 0 }} transition={{ duration: 2 }}>
                     <img src={bio.avatar_url} alt="avatar de breguenice" />
-                </div>
-                <Info>
-                    <h1>{bio.name}</h1>
-                    <h2><a href="https://github.com/breguenice3" target="_blank">@{bio.login}</a></h2>
-                    <h3>{bio.location}</h3>
-                    <p>{bio.bio}</p>
+                </motion.div>
+                <motion.div initial={{ x: -1000}} animate={{ x: 0}} transition={{duration:2}}>
+                    <Info>
+                        <h1>{bio.name}</h1>
+                        <h2><a href="https://github.com/breguenice3" target="_blank">@{bio.login}</a></h2>
+                        <h3>{bio.location}</h3>
+                        <p>{bio.bio}</p>
 
-                    <Icons>
-                        <RiHtml5Line size={35} />
-                        <FaCss3Alt size={35} />
-                        <RiJavascriptLine size={40} />
-                        <TbBrandTypescript size={36} />
-                        <RiReactjsFill size={36} />
-                    </Icons>
-                </Info>
+                        <Icons>
+                            <RiHtml5Line size={35} />
+                            <FaCss3Alt size={35} />
+                            <RiJavascriptLine size={40} />
+                            <TbBrandTypescript size={36} />
+                            <RiReactjsFill size={36} />
+                        </Icons>
+                    </Info>
+                </motion.div>
             </Div>
         </div>
     )

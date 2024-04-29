@@ -17,6 +17,7 @@ align-items: center;
         justify-content: space-evenly;
         padding: 0px 400px;
         background-color: #0f084b;
+        overflow-y: hidden;
     }
 
     & li{
