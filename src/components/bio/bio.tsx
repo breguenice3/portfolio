@@ -13,19 +13,16 @@ width: 100%;
 justify-content: space-evenly;
 height: 100vh;
 padding: 200px 0px;
-overflow-y: hidden;
+align-items: center;
 
 & img{
-    width: 400px;
+    width: 350px;
     border-radius: 50%;
-    box-shadow: 20px 20px 20px 10px #0d022189;
     box-shadow: 20px 20px 20px 10px #0d022189;
 }
 
 & img:hover{
-    transform: scale(1.1);
-    transition: ease 0.4s;
-    cursor: pointer;
+    transform: scale(1.06);
     transition: ease 0.4s;
     cursor: pointer;
 }
@@ -41,11 +38,9 @@ font-family: "Roboto", sans-serif;
 & p{
     font-size: 20px;
     padding: 0px 0px 20px 0px;
-    padding: 0px 0px 20px 0px;
 }
 
 & h3{
-    padding: 10px 0px 10px 0px;
     padding: 10px 0px 10px 0px;
     font-size: 24px;
 }
@@ -98,16 +93,15 @@ export default function Bio() {
             const response = await fetch(`https://api.github.com/users/breguenice3`);
             const data = await response.json();
             setBio(data);
-            setBio(data);
         }
         fetchData();
     }, []);
 
     return (
-        <div>
             <Div>
-                <motion.div initial={{ x: 1000 }} animate={{ x: 0 }} transition={{ duration: 2 }}>
+                <motion.div initial={{ x: 1000 }} animate={{ x: 0 }} transition={{ duration: 2 }} style={{display: "flex" , alignItems: "center", justifyContent: "center", width: "500px", height: "500px"}}>
                     <img src={bio.avatar_url} alt="avatar de breguenice" />
+                    {/* <img src="https://avatars.githubusercontent.com/u/163018302?s=400&u=1a6ef489ceb14069f2748d6c80716158f2be9f4d&v=4" alt="avatar de breguenice" /> */}
                 </motion.div>
                 <motion.div initial={{ x: -1000}} animate={{ x: 0}} transition={{duration:2}}>
                     <Info>
@@ -126,6 +120,5 @@ export default function Bio() {
                     </Info>
                 </motion.div>
             </Div>
-        </div>
     )
 }
