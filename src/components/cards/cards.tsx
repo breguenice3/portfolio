@@ -2,7 +2,6 @@ import styled from "styled-components";
 import Card from "../card-project/card";
 import { useState, useEffect } from "react";
 import { Octokit } from "octokit";
-import './animation.css'
 import { motion } from "framer-motion";
 
 const CardsLoad = styled.div`
@@ -50,26 +49,8 @@ export default function Cards() {
         fetchData();
     }, []);
 
-    // console.log(repositorios[2])
-    // useEffect(() => {
-    //     const observer = new IntersectionObserver(entries => {
-
-    //         Array.from(entries).forEach(entry => {
-    //             if (entries[0].intersectionRatio >= .2) {
-    //                 entry.target.classList.add('init-hidden-off')
-    //             }
-    //         })
-    //     }, {
-    //         threshold: [0, .5, 1]
-    //     })
-    //     Array.from(document.querySelectorAll('.init-hidden')).forEach(element => {
-    //         observer.observe(element);
-    //     })
-    // })
-
-
     return (
-        <motion.div initial={{ opacity: 0, y: 100 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 2 }}>
+        <motion.div initial={{ opacity: 0, y: 100 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 3 }}>
             <CardsLoad>
                 <div>
                     <h2>

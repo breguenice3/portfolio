@@ -1,10 +1,10 @@
-import styled from "styled-components";
 import { RiReactjsFill, RiJavascriptLine } from "react-icons/ri";
 import { RiHtml5Line } from "react-icons/ri";
 import { FaCss3Alt } from "react-icons/fa";
 import { TbBrandTypescript } from "react-icons/tb";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import styled from "styled-components";
 
 const Div = styled.div`
 display: flex;
@@ -88,21 +88,13 @@ const Icons = styled.div`
 }
 `
 
-const Icons = styled.div`
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    height: auto;
-`
 
 export default function Bio() {
 
     const [bio, setBio] = useState<any>([])
-    const [bio, setBio] = useState<any>([])
 
     useEffect(() => {
         const fetchData = async () => {
-            const response = await fetch(`https://api.github.com/users/breguenice3`);
             const response = await fetch(`https://api.github.com/users/breguenice3`);
             const data = await response.json();
             setBio(data);
