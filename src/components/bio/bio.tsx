@@ -101,7 +101,6 @@ export default function Bio() {
             <Div>
                 <motion.div initial={{ x: 1000 }} animate={{ x: 0 }} transition={{ duration: 2 }} style={{display: "flex" , alignItems: "center", justifyContent: "center", width: "500px", height: "500px"}}>
                     <img src={bio.avatar_url} alt="avatar de breguenice" />
-                    {/* <img src="https://avatars.githubusercontent.com/u/163018302?s=400&u=1a6ef489ceb14069f2748d6c80716158f2be9f4d&v=4" alt="avatar de breguenice" /> */}
                 </motion.div>
                 <motion.div initial={{ x: -1000}} animate={{ x: 0}} transition={{duration:2}}>
                     <Info>
