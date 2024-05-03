@@ -1,10 +1,11 @@
 import { RiReactjsFill, RiJavascriptLine } from "react-icons/ri";
 import { RiHtml5Line } from "react-icons/ri";
-import { FaCss3Alt } from "react-icons/fa";
+import { FaCss3Alt, FaGithub, FaGitAlt } from "react-icons/fa";
 import { TbBrandTypescript } from "react-icons/tb";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import styled from "styled-components";
+import { SiStyledcomponents } from "react-icons/si";
 
 const Div = styled.div`
 display: flex;
@@ -98,26 +99,29 @@ export default function Bio() {
     }, []);
 
     return (
-            <Div>
-                <motion.div initial={{ x: 1000 }} animate={{ x: 0 }} transition={{ duration: 2 }} style={{display: "flex" , alignItems: "center", justifyContent: "center", width: "500px", height: "500px"}}>
-                    <img src={bio.avatar_url} alt="avatar de breguenice" />
-                </motion.div>
-                <motion.div initial={{ x: -1000}} animate={{ x: 0}} transition={{duration:2}}>
-                    <Info>
-                        <h1>{bio.name}</h1>
-                        <h2><a href="https://github.com/breguenice3" target="_blank">@{bio.login}</a></h2>
-                        <h3>{bio.location}</h3>
-                        <p>{bio.bio}</p>
+        <Div id="sobre">
+            <motion.div initial={{ x: 1000 }} animate={{ x: 0 }} transition={{ duration: 2 }} style={{ display: "flex", alignItems: "center", justifyContent: "center", width: "500px", height: "500px" }}>
+                <img src={bio.avatar_url} alt="avatar de breguenice" />
+            </motion.div>
+            <motion.div initial={{ x: -1000 }} animate={{ x: 0 }} transition={{ duration: 2 }}>
+                <Info>
+                    <h1>{bio.name}</h1>
+                    <h2><a href="https://github.com/breguenice3" target="_blank">@{bio.login}</a></h2>
+                    <h3>{bio.location}</h3>
+                    <p>{bio.bio}</p>
 
-                        <Icons>
-                            <RiHtml5Line size={35} />
-                            <FaCss3Alt size={35} />
-                            <RiJavascriptLine size={40} />
-                            <TbBrandTypescript size={36} />
-                            <RiReactjsFill size={36} />
-                        </Icons>
-                    </Info>
-                </motion.div>
-            </Div>
+                    <Icons>
+                        <RiHtml5Line size={35} />
+                        <FaCss3Alt size={35} />
+                        <RiJavascriptLine size={40} />
+                        <TbBrandTypescript size={36} />
+                        <RiReactjsFill size={36} />
+                        <FaGithub size={30} />
+                        <FaGitAlt size={35} />
+                        <SiStyledcomponents size={45} />
+                    </Icons>
+                </Info>
+            </motion.div>
+        </Div>
     )
 }

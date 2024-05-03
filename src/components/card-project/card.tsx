@@ -10,16 +10,20 @@ interface Props {
 const CardStyle = styled.div`
     display: flex;
     flex-direction: column;
-    width: 200px;
-    height: auto;
-    padding-bottom: 20px;
+    width: 210px;
+    height: 175px;
+    font-size: 15px;
     border-radius: 15px;
-    background-color: gray;
+    background-color: #01424d;
     font-family: "Roboto", sans-serif;
+    text-align: center;
+    cursor: pointer;
+    padding: 0px 10px;
 
     &:hover{
         transform: scale(1.1);
         transition: ease-in 0.2s;
+        box-shadow: 5px 5px 5px 5px #0d022189;
     }
 
     & a{
@@ -27,29 +31,33 @@ const CardStyle = styled.div`
         background-color: #c2e7d9;
         border-radius: 10px;
         padding: 5px;
+        text-align: center;
         color: #0d0221;
+        width: 90px;
+        height: 30px;
         box-shadow: 1px 1px 1px black;
     }
 
     & a:hover{
-        background-color: #0000ff4c;
+        background-color: #f700ff9b;
         color: white;
         transition: ease-in-out 0.2s;
     }
 
     & div{
         display: flex;
+        height: 40px;
+        align-items: end;
         justify-content: space-between;
-        padding: 0px 20px;
+        padding: 0px 3px 5px 3px;
     }
 
     & h3{
-        padding: 20px 20px 10px 20px;
+        padding: 15px 0px;
     }
 
     & p{
         padding-bottom: 20px;
-        padding-left: 20px;
     }
 `
 

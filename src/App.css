@@ -4,12 +4,9 @@
   box-sizing: border-box;
   color: white;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body{
-  background-color: #26408b;
-}
-
-body{
-  background-color: #26408b;
+  background-color: #006270;
 }

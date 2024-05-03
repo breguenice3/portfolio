@@ -22,7 +22,7 @@ flex-direction: column;
 const CardsSpace = styled.div`
     width: 60%;
     height: auto;
-    background-color: #0d0221;
+    background-color: #FFFFFF;
     border-radius: 15px;
     display: flex;
     justify-content: space-evenly;
@@ -47,7 +47,7 @@ export default function Cards() {
 
     return (
         <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1}} transition={{ duration: 3 }}>
-            <CardsLoad>
+            <CardsLoad id="projetos">
                 <div>
                     <h2>
                         Projetos

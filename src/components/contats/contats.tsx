@@ -14,7 +14,7 @@ export default function Contats() {
     `
 
     return (
-        <StyledDiv>
+        <StyledDiv id="contatos">
             <motion.a href="https://twitter.com/breguenice" target="_blank" initial={{ x: -700 }} whileInView={{ x: 0 }} transition={{ duration: 1 }} whileHover={{scale: 1.1}}><CiTwitter size={60}/></motion.a>
             <motion.a href="https://www.linkedin.com/in/vin%C3%ADcius-gabriel-5a64a519a/" target="_blank" initial={{ y: 60 }} whileInView={{ y: 0 }} transition={{ duration: 1 }} whileHover={{scale: 1.1}}><CiLinkedin size={60}/></motion.a>
             <motion.a href="https://www.instagram.com/breguenice/" target="_blank" initial={{ x: 700 }} whileInView={{ x: 0 }} transition={{ duration: 1 }} whileHover={{scale: 1.1}}><CiInstagram size={60}/></motion.a>

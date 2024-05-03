@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 
 const StyledDiv = styled.div`
-background-color: #0f084b;
+background-color: #006270;
 font-family: "Roboto", sans-serif;
 font-weight: 600;
 width: 100%;
@@ -16,13 +16,11 @@ align-items: center;
         display: flex;
         justify-content: space-evenly;
         padding: 0px 400px;
-        background-color: #0f084b;
         overflow-y: hidden;
     }
 
     & li{
         list-style: none;
-        background-color: #0f084b;
         user-select: none;
     }
 
@@ -34,6 +32,10 @@ align-items: center;
         text-underline-offset: 5px;
         cursor: pointer;
     }
+
+    & a{
+        text-decoration: none;
+    }
 `
 
 
@@ -43,9 +45,9 @@ export default function Header() {
         <>
             <StyledDiv>
                 <ul>
-                    <li>Sobre mim</li>
-                    <li>Projetos</li>
-                    <li>Contatos</li>
+                    <li><a href="#sobre">Sobre mim</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#contatos">Contatos</a></li>
                 </ul>
             </StyledDiv>
         </>
