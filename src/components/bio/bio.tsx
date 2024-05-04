@@ -16,6 +16,17 @@ height: 100vh;
 padding: 200px 0px;
 align-items: center;
 
+@media (min-width: 375px) and (max-width: 1440px) {
+   width: 100vw;
+   min-width: 375px;
+   height: auto;
+   padding: 10px 0px;
+   flex-direction: column;
+   & img{
+    box-shadow: 5px 5px 5px 5px #0d022189;
+   }
+}
+
 & img{
     width: 350px;
     border-radius: 50%;
@@ -35,6 +46,20 @@ height: 100%;
 width: 500px;
 padding: 100px 0px;
 font-family: "Roboto", sans-serif;
+
+@media (min-width: 375px) and (max-width: 1440px) {
+    flex-direction: column;
+    height: auto;
+    min-width: 375px;
+    width: 100vw;
+    padding: 10px 0px;
+    text-align: center;
+
+    & p{
+        font-size: 18px;
+        padding: 20px;
+    }
+}
 
 & p{
     font-size: 20px;
@@ -69,6 +94,12 @@ const Icons = styled.div`
     gap: 10px;
     align-items: center;
     height: auto;
+
+    
+@media (min-width: 375px) and (max-width: 1440px) {
+   width: 100%;
+   justify-content: center;
+}
 
 & h2{
     font-size: 16px;

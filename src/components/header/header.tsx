@@ -1,6 +1,5 @@
 import styled from "styled-components"
 
-
 const StyledDiv = styled.div`
 background-color: #006270;
 font-family: "Roboto", sans-serif;
@@ -36,6 +35,18 @@ align-items: center;
     & a{
         text-decoration: none;
     }
+
+    @media (min-width: 375px) and (max-width: 1440px) {
+    width: 100%;
+    min-width: 375px;
+    color: beige;
+    font-weight: 500;
+    
+    & ul{
+        height: auto;
+        padding: 0px;
+    }
+}
 `
 
 

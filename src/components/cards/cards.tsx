@@ -11,6 +11,16 @@ align-items: center;
 justify-content: center;
 flex-direction: column;
 
+
+@media (min-width: 375px) and (max-width: 1440px) {
+   gap: 20px;
+   height: auto;
+
+   & h2{
+    padding-top: 20px;
+   }
+}
+
 & h2{
     font-family: "Roboto", sans-serif;
     font-weight: 500;
@@ -29,13 +39,18 @@ const CardsSpace = styled.div`
     gap: 40px;
     flex-wrap: wrap;
     padding: 50px 20px;
+
+    
+@media (min-width: 375px) and (max-width: 1440px) {
+    width: 70%;
+}
    `
 
 export default function Cards() {
 
     const [repositorios, setRepositorios] = useState<any[]>([])
 
-   
+
     useEffect(() => {
         const fetchData = async () => {
             const response = await fetch(`https://api.github.com/users/breguenice3/repos`);
@@ -46,13 +61,11 @@ export default function Cards() {
     }, []);
 
     return (
-        <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1}} transition={{ duration: 3 }}>
+        <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 3 }}>
             <CardsLoad id="projetos">
-                <div>
                     <h2>
                         Projetos
                     </h2>
-                </div>
                 <CardsSpace>
                     {repositorios.length > 0 ? repositorios.map((repositorio) => {
                         if (repositorio.homepage) {
