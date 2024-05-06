@@ -11,19 +11,19 @@ interface Props {
 const CardStyle = styled.div`
     display: flex;
     flex-direction: column;
-    width: 210px;
-    height: 175px;
+    width: 500px;
+    height: 450px;
     font-size: 15px;
     border-radius: 15px;
     background-color: #01424d;
     font-family: "Roboto", sans-serif;
     text-align: center;
     cursor: pointer;
-    padding: 0px 10px;
+    padding: 0px;
 
     & img{
-        width: 30px;
-        height: 30px;
+        width: 100%;
+        height: 300px;
     }
 
     &:hover{
@@ -55,7 +55,7 @@ const CardStyle = styled.div`
         height: 40px;
         align-items: end;
         justify-content: space-between;
-        padding: 0px 3px 5px 3px;
+        padding: 0px 80px 5px 80px;
     }
 
     & h3{
@@ -64,6 +64,26 @@ const CardStyle = styled.div`
 
     & p{
         padding-bottom: 20px;
+    }
+
+    @media (min-width: 375px) and (max-width: 1440px) {
+        width: 350px;
+        height: 300px;
+        font-size: 15px;
+        padding: 0px;
+
+        & img{
+        width: 100%;
+        height: 150px;
+    }
+
+    & div{
+        display: flex;
+        height: 40px;
+        align-items: end;
+        justify-content: space-between;
+        padding: 0px 5px 5px 5px;
+    }
     }
 `
 

@@ -11,6 +11,7 @@ export default function Contats() {
         justify-content: center;
         gap: 150px;
         overflow-y: hidden;
+        margin-top: 40px;
 
         @media (min-width: 375px) and (max-width: 1440px) {
             gap: 30px;

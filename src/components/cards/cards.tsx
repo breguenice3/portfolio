@@ -26,6 +26,7 @@ flex-direction: column;
     font-weight: 500;
     font-size: 34px;
     padding-bottom: 50px;
+    overflow-y: hidden;
 }
 `
 
@@ -56,55 +57,63 @@ export default function Cards() {
             linguagem: 'Typescript e React',
             repositorio: 'https://github.com/breguenice3/aluroni',
             site: 'https://aluroni-iota-brown.vercel.app/',
+            img: 'https://github.com/breguenice3/aluroni/raw/main/aluroniPreview.jpg'
         },
         {
             nome: 'Api address tracker',
             linguagem: 'JavaScript',
             repositorio: 'https://github.com/breguenice3/api-address-tracker',
-            site: 'https://api-address-tracker-rosy.vercel.app/'
+            site: 'https://api-address-tracker-rosy.vercel.app/',
+            img: 'https://github.com/breguenice3/api-address-tracker/raw/main/design/desktop-preview.jpg'
         },
         {
             nome: 'Countries api',
             linguagem: 'Typescript e React',
             repositorio: 'https://github.com/breguenice3/countries-api',
-            site: 'https://countries-api-eta-eosin.vercel.app/'
+            site: 'https://countries-api-eta-eosin.vercel.app/',
+            img: 'https://github.com/breguenice3/countries-api/raw/master/design/desktop-preview.jpg'
         },
         {
             nome: 'Portfolio',
             linguagem: 'Typescript e React',
             repositorio: 'https://github.com/breguenice3/portfolio',
             site: 'https://portfolio-lac-three-86.vercel.app/',
-            img: './img/previewPortfolio.jpg'
+            img: 'https://github.com/breguenice3/portfolio/raw/master/previewPortfolio.jpg'
         },
         {
             nome: 'React intro component signup form',
             linguagem: 'Typescript e React',
             repositorio: 'https://github.com/breguenice3/react-intro-component-signup-form',
-            site: 'https://intro-component-signup-form-olive.vercel.app/'
+            site: 'https://intro-component-signup-form-olive.vercel.app/',
+            img: 'https://github.com/breguenice3/react-intro-component-signup-form/raw/main/intoComponents.jpg'
         },
         {
             nome: 'React organograma',
             linguagem: 'React',
             repositorio: 'https://github.com/breguenice3/react-organograma',
-            site: 'https://organograma-pi.vercel.app/'
+            site: 'https://organograma-pi.vercel.app/',
+            img: 'https://github.com/breguenice3/react-organograma/raw/main/organo.jpg'
         },
         {
             nome: 'React social links profile',
             linguagem: 'Typescript e React',
             repositorio: 'https://github.com/breguenice3/react-social-links-profile',
-            site: 'https://social-links-profile-psi-ten.vercel.app/'
+            site: 'https://social-links-profile-psi-ten.vercel.app/',
+            img: 'https://github.com/breguenice3/react-social-links-profile/raw/main/socialLinks.jpg'
         },
         {
             nome: 'React space tourism website',
             linguagem: 'Typescript e React',
             repositorio: 'https://github.com/breguenice3/react-space-tourism-website',
             site: 'https://space-tourism-website-xi-flame.vercel.app/',
+            img: 'https://github.com/breguenice3/react-space-tourism-website/raw/master/preview.jpg'
         },
         {
             nome: 'Valorant cards',
             linguagem: 'JavaScript',
             repositorio: 'https://github.com/breguenice3/valorant-cards',
-            site: 'https://valorant-cards-pearl.vercel.app/'
+            site: 'https://valorant-cards-pearl.vercel.app/',
+            img: 'https://github.com/breguenice3/valorant-cards/raw/main/valorantCardsPreview.jpg'
         }
     ]
 
