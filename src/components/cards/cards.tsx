@@ -73,7 +73,8 @@ export default function Cards() {
             nome: 'Portfolio',
             linguagem: 'Typescript e React',
             repositorio: 'https://github.com/breguenice3/portfolio',
-            site: 'https://portfolio-lac-three-86.vercel.app/'
+            site: 'https://portfolio-lac-three-86.vercel.app/',
+            img: './img/previewPortfolio.jpg'
         },
         {
             nome: 'React intro component signup form',
@@ -98,7 +99,6 @@ export default function Cards() {
             linguagem: 'Typescript e React',
             repositorio: 'https://github.com/breguenice3/react-space-tourism-website',
             site: 'https://space-tourism-website-xi-flame.vercel.app/',
-            img: 'https://github.com/breguenice3/react-space-tourism-website/raw/master/preview.jpg'
         },
         {
             nome: 'Valorant cards',
