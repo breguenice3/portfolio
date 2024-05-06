@@ -1,6 +1,7 @@
 import styled from "styled-components"
 
 interface Props {
+    img: any,
     name: string,
     language: string,
     url: string,
@@ -19,6 +20,11 @@ const CardStyle = styled.div`
     text-align: center;
     cursor: pointer;
     padding: 0px 10px;
+
+    & img{
+        width: 30px;
+        height: 30px;
+    }
 
     &:hover{
         transform: scale(1.1);
@@ -61,10 +67,11 @@ const CardStyle = styled.div`
     }
 `
 
-export default function Card({ name, language, url, liveurl }: Props) {
+export default function Card({ img, name, language, url, liveurl }: Props) {
 
     return (
         <CardStyle>
+            <img src={img} alt="" />
             <h3>{name}</h3>
             <p>{language}</p>
             <div>
