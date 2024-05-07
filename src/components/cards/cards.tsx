@@ -5,11 +5,12 @@ import { motion } from "framer-motion";
 
 const CardsLoad = styled.div`
 width: 100%;
-height: 100vh;
+height: auto;
 display: flex;
 align-items: center;
 justify-content: center;
 flex-direction: column;
+padding-bottom: 100px;
 
 
 @media (min-width: 375px) and (max-width: 1440px) {
@@ -40,6 +41,7 @@ const CardsSpace = styled.div`
     gap: 40px;
     flex-wrap: wrap;
     padding: 50px 20px;
+    border-top-right-radius: 20px;
 
     
 @media (min-width: 375px) and (max-width: 1440px) {

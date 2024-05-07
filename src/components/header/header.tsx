@@ -58,6 +58,7 @@ export default function Header() {
                 <ul>
                     <li><a href="#sobre">Sobre mim</a></li>
                     <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#skills">Skills</a></li>
                     <li><a href="#contatos">Contatos</a></li>
                 </ul>
             </StyledDiv>

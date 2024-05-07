@@ -2,10 +2,11 @@ import { RiReactjsFill, RiJavascriptLine } from "react-icons/ri";
 import { RiHtml5Line } from "react-icons/ri";
 import { FaCss3Alt, FaGithub, FaGitAlt } from "react-icons/fa";
 import { TbBrandTypescript } from "react-icons/tb";
+import { SiStyledcomponents } from "react-icons/si";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import styled from "styled-components";
-import { SiStyledcomponents } from "react-icons/si";
+
 
 const Div = styled.div`
 display: flex;

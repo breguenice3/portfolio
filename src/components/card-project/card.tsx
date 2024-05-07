@@ -45,7 +45,7 @@ const CardStyle = styled.div`
     }
 
     & a:hover{
-        background-color: #f700ff9b;
+        background-color: #808080;
         color: white;
         transition: ease-in-out 0.2s;
     }
