@@ -48,19 +48,6 @@ width: 500px;
 padding: 100px 0px;
 font-family: 'Roboto Mono', monospace;
 
-@media (min-width: 375px) and (max-width: 1440px) {
-    flex-direction: column;
-    height: auto;
-    min-width: 375px;
-    width: 100vw;
-    padding: 10px 0px;
-    text-align: center;
-
-    & p{
-        font-size: 18px;
-        padding: 20px;
-    }
-}
 
 & p{
     font-size: 20px;
@@ -87,6 +74,20 @@ font-family: 'Roboto Mono', monospace;
 
 & a:hover{
     color: #0000003e;
+}
+
+@media (min-width: 375px) and (max-width: 1440px) {
+    flex-direction: column;
+    height: auto;
+    min-width: 375px;
+    width: 100vw;
+    padding: 10px 0px;
+    text-align: center;
+
+    & p{
+        font-size: 18px;
+        padding: 40px 20px; 
+    }
 }
 `
 

@@ -70,7 +70,7 @@ const CardStyle = styled.div`
 
     @media (min-width: 375px) and (max-width: 1440px) {
         width: 350px;
-        height: 300px;
+        height: 340px;
         font-size: 15px;
         padding: 0px;
 
@@ -81,10 +81,11 @@ const CardStyle = styled.div`
 
     & div{
         display: flex;
-        height: 40px;
-        align-items: end;
-        justify-content: space-between;
-        padding: 0px 5px 5px 5px;
+        flex-direction: column;
+        height: 100px;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 0px;
     }
     }
 `

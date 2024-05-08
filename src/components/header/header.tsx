@@ -48,6 +48,10 @@ align-items: center;
         height: auto;
         padding: 0px;
     }
+
+    & a{
+        font-size: 14px;
+    }
 }
 `
 

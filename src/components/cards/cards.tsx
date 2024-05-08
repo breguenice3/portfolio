@@ -12,22 +12,21 @@ justify-content: center;
 flex-direction: column;
 padding-bottom: 100px;
 
+& h2{
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 34px;
+    padding-bottom: 20px;
+    overflow-y: hidden;
+}
 
 @media (min-width: 375px) and (max-width: 1440px) {
    gap: 20px;
    height: auto;
 
    & h2{
-    padding-top: 20px;
+    padding-top: 30px;
    }
-}
-
-& h2{
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-size: 34px;
-    padding-bottom: 50px;
-    overflow-y: hidden;
 }
 `
 
