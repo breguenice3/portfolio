@@ -2,6 +2,10 @@
 
 ![Design preview for the portfolio](./previewPortfolio.jpg)
 
+## Detalhes
+
+Esse projeto foi feito em React & Typescript para montar meu porfólio. Uma API do github para conectar meu perfil, bio e foto de perfil ate ele e meus repositórios do github listados la, junto com uma lista de tecnologias que utilizo no meu cotidiano. O projeto conta tambem com algumas interações de sobreposição na foto de perfil e nos cards do projeto, além do link em cada card de skills para a documentação de cada tecnologia utilizada.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
