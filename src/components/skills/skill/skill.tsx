@@ -32,6 +32,7 @@ const StyledDiv = styled.div`
             flex-direction: column;
             flex-wrap: wrap;
             width: 500px;
+            font-family: 'Roboto Mono', monospace;
         }
     }
 

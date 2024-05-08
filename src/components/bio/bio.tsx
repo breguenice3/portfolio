@@ -46,7 +46,7 @@ flex-direction: column;
 height: 100%;
 width: 500px;
 padding: 100px 0px;
-font-family: "Roboto", sans-serif;
+font-family: 'Roboto Mono', monospace;
 
 @media (min-width: 375px) and (max-width: 1440px) {
     flex-direction: column;

@@ -15,8 +15,8 @@ const CardStyle = styled.div`
     height: 450px;
     font-size: 15px;
     border-radius: 15px;
-    background-color: #01424d;
-    font-family: "Roboto", sans-serif;
+    background-color: #bdeb07;
+    font-family: 'Roboto Mono', monospace;
     text-align: center;
     cursor: pointer;
     padding: 0px;
@@ -34,12 +34,12 @@ const CardStyle = styled.div`
 
     & a{
         text-decoration: none;
-        background-color: #c2e7d9;
+        background-color: #e0e0e0;
         border-radius: 10px;
         padding: 5px;
         text-align: center;
-        color: #0d0221;
-        width: 90px;
+        color: #484848;
+        width: 100px;
         height: 30px;
         box-shadow: 1px 1px 1px black;
     }
@@ -60,10 +60,12 @@ const CardStyle = styled.div`
 
     & h3{
         padding: 15px 0px;
+        color: #484848;
     }
 
     & p{
         padding-bottom: 20px;
+        color: #484848;
     }
 
     @media (min-width: 375px) and (max-width: 1440px) {
