@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-![Design preview for the portfolio](./previewPortfolio.jpg)
+![Design preview for the portfolio](./previewPortfolio.jpg) 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
