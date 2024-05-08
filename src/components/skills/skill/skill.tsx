@@ -34,6 +34,17 @@ const StyledDiv = styled.div`
             width: 500px;
             font-family: 'Roboto Mono', monospace;
         }
+
+        @media (min-width: 375px) and (max-width: 1440px) {
+            & h3{
+                font-size: 16px;
+            }
+            
+            & p{
+                padding-top: 5px;
+                font-size: 12px;
+            }
+        }
     }
 
     & :hover{

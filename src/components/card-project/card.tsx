@@ -79,6 +79,14 @@ const CardStyle = styled.div`
         height: 150px;
     }
 
+        & p{
+            padding-bottom: 5px;
+        }
+
+        & a{
+            min-width: 110px;
+        }
+
     & div{
         display: flex;
         flex-direction: column;
