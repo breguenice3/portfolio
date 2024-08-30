@@ -68,11 +68,25 @@ export default function Cards() {
             img: 'https://github.com/breguenice3/api-address-tracker/raw/main/design/desktop-preview.jpg'
         },
         {
+            nome: 'Bookmark landing page',
+            linguagem: 'Typescript e React',
+            repositorio: 'https://github.com/breguenice3/bookmark-landing-page',
+            site: 'https://bookmark-landing-page-eta-lac.vercel.app/',
+            img: 'https://github.com/breguenice3/bookmark-landing-page/raw/master/design/desktop-preview.jpg'
+        },
+        {
             nome: 'Countries api',
             linguagem: 'Typescript e React',
             repositorio: 'https://github.com/breguenice3/countries-api',
             site: 'https://countries-api-eta-eosin.vercel.app/',
             img: 'https://github.com/breguenice3/countries-api/raw/master/design/desktop-preview.jpg'
+        },
+        {
+            nome: 'Nunes sports',
+            linguagem: 'Typescript, React e NodeJS',
+            repositorio: 'https://github.com/breguenice3/nunes-sports',
+            site: 'https://github.com/breguenice3/nunes-sports',
+            img: 'https://github.com/breguenice3/nunes-sports/blob/master/frontend/public/image.jpg?raw=true'
         },
         {
             nome: 'Portfolio',
@@ -108,6 +122,13 @@ export default function Cards() {
             repositorio: 'https://github.com/breguenice3/react-space-tourism-website',
             site: 'https://space-tourism-website-xi-flame.vercel.app/',
             img: 'https://github.com/breguenice3/react-space-tourism-website/raw/master/preview.jpg'
+        },
+        {
+            nome: 'Todo app',
+            linguagem: 'Typescript e React',
+            repositorio: 'https://github.com/breguenice3/todo-app',
+            site: 'https://todo-app-black-kappa-95.vercel.app/',
+            img: 'https://github.com/breguenice3/todo-app/raw/master/design/desktop-preview.jpg'
         },
         {
             nome: 'Valorant cards',
